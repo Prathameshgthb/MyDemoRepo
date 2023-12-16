@@ -9,3 +9,4 @@ First you need to set Author Identity:
 git config --global user.email "your emailid"
 git config --global user.name "Your Name"
 
+After adding Author Identity next step is to generate Access Tokens for this go to GitHub Settings 

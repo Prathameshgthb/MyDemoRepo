@@ -1,0 +1,18 @@
+#######################################################
+INSTRUCTIONS TO BE FOLLOWED TO SETUP GITHUB ACCOUNT
+#######################################################
+
+STEP 1:
+First you need to set Author Identity:
+
+git config --global user.email "your emailid"
+git config --global user.name "Your Name"
+
+STEP 2:
+Set Authentication Codes: 
+Go To Settings>Developer Options>Generate Tokens
+
+Open command terminal and type the below command -
+git remote set-url origin https://USERNAME:TOKEN@github.com/Prathameshgthb/MyDemoRepo.git
+
+(where the USERNAME is your GitHub Username and TOKEN is the generated token link)
