@@ -16,3 +16,34 @@ Open command terminal and type the below command -
 git remote set-url origin https://USERNAME:TOKEN@github.com/Prathameshgthb/MyDemoRepo.git
 
 (where the USERNAME is your GitHub Username and TOKEN is the generated token link)
+
+
+##############################################################
+TO ADD A REMOTE REPOSITORY INTO YOUR LOCAL SYSTEM:
+$git clone <HTTP Link>
+
+COMMANDS TO FOLLOW TO STAGE, COMMIT & PUSH CHANGES INTO REMOTE:
+(First press Ctrl + S to save the file in Visual Studio)
+$git add <Filename1>  <Filename2>
+$git commit -m "<Comment>"
+$git push 
+
+NOTE: To add all changes in various different files use '$git add ."
+NOTE: To add & commit in one same line use - '$git commit -am "<Comment>"
+
+TO CHECK STATUS OF REMOTE & LOCAL SYSTEM REPOSITORY:
+$git status
+
+TO CREATE NEW BRANCH & MERGE IT WITH MAIN BRANCH:
+$git checkout -b "<NewBranchName>"
+$git branch --- To see which branch you are working in.
+(After making changes in your newly created branch)
+$git commit -am "<Comment>"
+(If you try to push the changes it wont work because the newly created branch does not exist in Git; it only exists in your Local System. Follow -)
+$git push --set-upstream origin <NewBranchName>
+(Now the new branch is created on Remote as well)
+(To merge this branch contents with the Main branch, switch to  Main branch first -)
+$git checkout main
+$git merge <NewBranchName>
+$git commit -m "<Comment>"
+$git push
